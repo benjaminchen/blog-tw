@@ -1,0 +1,30 @@
+#favicon
+favicon: /images/favicon.png
+
+# logo
+logo: /images/logo.svg
+
+# Header
+menu:
+  home: /
+  #about: /about
+  archives: /archives
+  categories: /categories
+  tags: /tags
+language_list:
+  tw:
+    name: 繁體中文
+    href: /
+  us:
+    name: English
+    href: https://benjamin.bekateam.com/
+
+# Sidebar
+sidebar: right
+widgets:
+- recent_posts
+- tagcloud
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false

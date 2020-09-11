@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: 阿班的大腦深處
+subtitle: '放心的成為自己想成為的自己'
 description: ''
 keywords:
-author: John Doe
-language: en
+author: 班傑明．陳
+language: zh-tw
 timezone: ''
 
 # URL
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: simple
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
