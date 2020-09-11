@@ -22,5 +22,5 @@ env:
   global:
     - USER_NAME="benjaminchen"
     - USER_EMAIL="benjaminchen.c@gmail.com"
-    - REPO="blog"
+    - REPO="blog-tw"
     - GH_REF="github.com/${USER_NAME}/${REPO}.git"
