@@ -100,6 +100,9 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: simple
 
+# Google analystics
+ga_code: UA-178045637-1
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
