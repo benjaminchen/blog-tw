@@ -1,0 +1,19 @@
+.article-entry {
+  word-wrap: break-word;
+}
+.article-entry h2,
+.article-entry h3,
+.article-entry h4,
+.article-entry h5,
+.article-entry h6 {
+  padding-top: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 20px 0 15px;
+}
+.article-entry h2 {
+  font-size: 1.375em;
+}
+.article-entry h3 {
+  font-size: 1.25em;
+}

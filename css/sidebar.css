@@ -1,0 +1,5 @@
+.sidebar li {
+  display: inline;
+  list-style: none;
+  padding: 4px;
+}
