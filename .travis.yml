@@ -1,26 +1,25 @@
 language: node_js
-node_js: stable
-cache:
-  directories:
-    - node_modules
-install:
-  - npm install
-script:
-  - hexo generate
-after_success:
-  - cd public
-  - git init
-  - git config user.name "${USER_NAME}"
-  - git config user.email "${USER_EMAIL}"
-  - git add .
-  - git commit --allow-empty -m 'update site'
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+node_js:
+  - 12
 branchs:
   only:
     - dev
-env:
-  global:
-    - USER_NAME="benjaminchen"
-    - USER_EMAIL="benjaminchen.c@gmail.com"
-    - REPO="blog-tw"
-    - GH_REF="github.com/${USER_NAME}/${REPO}.git"
+cache:
+  directories:
+    - node_modules
+before_script:
+  - npm install hexo-cli
+  - npm install
+script:
+  - hexo clean
+  - hexo generate
+deploy:
+  on:
+    branch: dev
+  strategy: git
+  provider: pages
+  skip_cleanup: true
+  token: $GH_TOKEN
+  keep_history: true
+  local_dir: public
+  target_branch: master
